@@ -19,7 +19,7 @@
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                 <div class="navbar-end">
-                    <a class="btn">Button</a>
+                    <button class="btn btn-primary ">Blog</button>
                 </div>
             </div>
           </div>
@@ -27,9 +27,9 @@
 
 
 
-        <div class="navbar-center">
-          <a class="btn btn-ghost text-xl"><img src="assest/logo.png" alt="">
-            <h3>Donate Bangladesh</h3></a>
+        <div class="navbar-center gap-3">
+          <img src="assest/logo.png" alt="">
+            <h3 class="font-bold">Donate Bangladesh</h3></a>
         </div>
 
 
@@ -38,7 +38,7 @@
         
           <div class="flex gap-1 items-center p-2 w-3/12 bg-slate-200 ">
             <img src="assest/coin.png" alt="">
-            0 BDT
+            <span id="navMoney">5000 BDT</span>
         </div>
         </div>
 
@@ -46,21 +46,33 @@
     <!-- nav section end     -->
 
     <main>
-        <div class="hero bg-base-200  ">
-            <div class="hero-content  lg:flex-row-reverse ">
+
+       <!--2 button start -->
+       <div class="flex justify-center gap-4 my-4">
+        <button class="btn btn-primary ">Donation</button>
+        <button class="btn btn-normal">History</button>
+       </div>
+       <!--2 button end -->
+
+
+
+
+
+        <div class="hero bg-base-200   ">
+            <div class="hero-content  lg:flex-row-reverse  ">
 
                 <div>
-                    <div class="flex gap-1 items-center p-2 w-3/12 bg-slate-200 ">
+                    <div class="flex gap-1 items-center p-2 w-2/12 bg-slate-200 ">
                         <img src="assest/coin.png" alt="">
-                        0 BDT
+                        <span id="addMoney"> 0 BDT</span>
                     </div>
                     <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
                     <p class="py-6">
                         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                         quasi. In deleniti eaque aut repudiandae et a id nisi.
                     </p>
-                    <input class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount"> <br> <br>
-                    <button class="btn btn-primary w-full">Donate Now</button>
+                    <input id="input" class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount"> <br> <br>
+                    <button id="donateBtn" class="btn btn-primary w-full">Donate Now</button>
                 </div>
                 <div>
                     <img src="assest/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
@@ -74,17 +86,17 @@
             <div class="hero-content  lg:flex-row-reverse ">
 
                 <div>
-                    <div class="flex gap-1 items-center p-2 w-3/12 bg-slate-200 ">
+                    <div class="flex gap-1 items-center p-2 w-2/12 bg-slate-200 ">
                         <img src="assest/coin.png" alt="">
-                        0 BDT
+                        <span id="addMoney2"> 0 BDT</span>
                     </div>
                     <h1 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
                     <p class="py-6">
                         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                         quasi. In deleniti eaque aut repudiandae et a id nisi.
                     </p>
-                    <input class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount"> <br> <br>
-                    <button class="btn btn-primary w-full">Donate Now</button>
+                    <input id="input2" class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount"> <br> <br>
+                    <button id="donateBtn2" class="btn btn-primary w-full">Donate Now</button>
                 </div>
                 <div>
                     <img src="assest/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
@@ -98,17 +110,17 @@
             <div class="hero-content  lg:flex-row-reverse ">
 
                 <div>
-                    <div class="flex gap-1 items-center p-2 w-3/12 bg-slate-200 ">
+                    <div class="flex gap-1 items-center p-2 w-2/12 bg-slate-200 ">
                         <img src="assest/coin.png" alt="">
-                        0 BDT
+                        <span id="addMoney3"> 0 BDT</span>
                     </div>
                     <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
                     <p class="py-6">
                         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                         quasi. In deleniti eaque aut repudiandae et a id nisi.
                     </p>
-                    <input class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount"> <br> <br>
-                    <button class="btn btn-primary w-full">Donate Now</button>
+                    <input id="input3" class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount"> <br> <br>
+                    <button id="donateBtn3" class="btn btn-primary w-full">Donate Now</button>
                 </div>
                 <div>
                     <img src="assest/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
