@@ -1,92 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
-    
-<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
- <!-- nav section start     -->
-<nav>
+
     <div class="navbar bg-base-100">
+        
+
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <div class="navbar-end">
+                    <a class="btn">Button</a>
+                </div>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
-            </ul>
           </div>
-          <a class="btn btn-ghost text-xl">daisyUI</a>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
+
+
+
+        <div class="navbar-center">
+          <a class="btn btn-ghost text-xl"><img src="assest/logo.png" alt="">
+            <h3>Donate Bangladesh</h3></a>
         </div>
+
+
+
         <div class="navbar-end">
-          <a class="btn">Button</a>
+        
+          <div class="flex gap-1 items-center p-2 w-3/12 bg-slate-200 ">
+            <img src="assest/coin.png" alt="">
+            0 BDT
         </div>
-      </div>
-</nav>
-<!-- nav section end     -->
-
-<main>
-    <div class="hero bg-base-200 min-h-screen ">
-        <div class="hero-content  lg:flex-row-reverse ">
-
-            <div>
-                <h1 class="text-5xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
-                <p class="py-6">
-                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                  quasi. In deleniti eaque aut repudiandae et a id nisi.
-                </p>
-                <input class="w-full" type="number" placeholder="Write Donation Amount"> <br> <br>
-                <button class="btn btn-primary w-full">Donate Now</button>
-              </div>
-          <img
-            src="assest/noakhali.png"
-            class="max-w-sm rounded-lg shadow-2xl" />
-          
         </div>
-      </div>
 
-</main>
+      </div>
+    <!-- nav section end     -->
+
+    <main>
+        <div class="hero bg-base-200  ">
+            <div class="hero-content  lg:flex-row-reverse ">
+
+                <div>
+                    <div class="flex gap-1 items-center p-2 w-3/12 bg-slate-200 ">
+                        <img src="assest/coin.png" alt="">
+                        0 BDT
+                    </div>
+                    <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                    <p class="py-6">
+                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                    <input class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount"> <br> <br>
+                    <button class="btn btn-primary w-full">Donate Now</button>
+                </div>
+                <div>
+                    <img src="assest/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 2  -->
+        <div class="hero bg-base-200  ">
+            <div class="hero-content  lg:flex-row-reverse ">
+
+                <div>
+                    <div class="flex gap-1 items-center p-2 w-3/12 bg-slate-200 ">
+                        <img src="assest/coin.png" alt="">
+                        0 BDT
+                    </div>
+                    <h1 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                    <p class="py-6">
+                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                    <input class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount"> <br> <br>
+                    <button class="btn btn-primary w-full">Donate Now</button>
+                </div>
+                <div>
+                    <img src="assest/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="hero bg-base-200">
+            <div class="hero-content  lg:flex-row-reverse ">
+
+                <div>
+                    <div class="flex gap-1 items-center p-2 w-3/12 bg-slate-200 ">
+                        <img src="assest/coin.png" alt="">
+                        0 BDT
+                    </div>
+                    <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
+                    <p class="py-6">
+                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                    <input class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount"> <br> <br>
+                    <button class="btn btn-primary w-full">Donate Now</button>
+                </div>
+                <div>
+                    <img src="assest/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
+                </div>
+
+            </div>
+        </div>
+
+    </main>
 
 
 
@@ -101,4 +132,5 @@
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>
