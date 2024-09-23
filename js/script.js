@@ -15,9 +15,18 @@ donateBtn.addEventListener('click', function () {
     
     document.getElementById('addMoney').innerText = inputOne
 
+
+    document.getElementById('donateOne').innerText = inputOne
+
+
+    
+    
+
     const navMoney = parseFloat(document.getElementById('navMoney').innerText)
+ 
 
     const result = navMoney - inputOne
+   
  
     
     document.getElementById('navMoney').innerText = result
@@ -38,6 +47,8 @@ donateBtn2.addEventListener('click', function() {
     const inputTwo = getInputValueById('input2')
     document.getElementById('addMoney2').innerText = inputTwo
 
+    document.getElementById('donateTwo').innerText = inputTwo
+
 
 
     const navMoney = parseFloat(document.getElementById('navMoney').innerText)
@@ -57,6 +68,8 @@ const donateBtn3 = document.getElementById('donateBtn3')
 donateBtn3.addEventListener('click', function() {
     const inputThree = getInputValueById('input3')
     document.getElementById('addMoney3').innerText = inputThree
+
+    document.getElementById('donateThree').innerText = inputThree
 
     const navMoney = parseFloat(document.getElementById('navMoney').innerText)
 
@@ -93,12 +106,12 @@ history.addEventListener('click', function() {
 // donate 
 
 
-    donate.classList.add('text-gray-600')
+    // donate.classList.add('text-gray-600')
 
 
 
-document.getElementById("main-section").classList.add('hidden')
-document.getElementById('historyBtn').classList.remove('hidden')
+// document.getElementById("main-section").classList.add('hidden')
+// document.getElementById('historyBtn').classList.remove('hidden')
 
 
 
@@ -123,7 +136,7 @@ document.getElementById('historyBtn').classList.remove('hidden')
 
     history.classList.remove("btn", "btn-normal")
 
-    document.getElementById('main-section').classList.remove('hidden')
+    document.getElementById('main-section').classList.add('hidden')
     document.getElementById("historyBtn").classList.remove('hidden')
   })
 
@@ -132,3 +145,5 @@ document.getElementById('historyBtn').classList.remove('hidden')
     window.location.href = '/home.html'
     
   })
+
+
