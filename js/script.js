@@ -2,7 +2,7 @@ function getInputValueById(id) {
     const inputValue = parseFloat(document.getElementById(id).value)
     return inputValue
 }
-
+const historySection = document.getElementById('history-section')
 const donateBtn = document.getElementById('donateBtn1')
 donateBtn.addEventListener('click', function () {
    
@@ -54,6 +54,7 @@ donateBtn2.addEventListener('click', function() {
         alert('Valid Donate Amount')
     }
 
+ 
     
 })
 
@@ -118,5 +119,4 @@ document.getElementById('history-section').classList.add('hidden')
     window.location.href = './home.html'
     
   })
-
 
