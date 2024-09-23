@@ -2,10 +2,6 @@ function getInputValueById(id) {
     return parseFloat(document.getElementById(id).value)
 }
 
-
-
-
-
 const donateBtn = document.getElementById('donateBtn1')
 donateBtn.addEventListener('click', function () {
    
@@ -17,18 +13,10 @@ donateBtn.addEventListener('click', function () {
 
 
     document.getElementById('donateOne').innerText = inputOne
-
-
-    
-    
-
     const navMoney = parseFloat(document.getElementById('navMoney').innerText)
  
 
     const result = navMoney - inputOne
-   
- 
-    
     document.getElementById('navMoney').innerText = result
 
 
@@ -94,41 +82,12 @@ history.addEventListener('click', function() {
  history.classList.add("btn", "btn-primary")
 
 
+ donate.classList.remove("btn", "btn-primary")
 
-
-
-
-
- history.classList.remove("text-gray-600")  
- donate.classList.remove("btn", "btn-normal")
-
-
-// donate 
-
-
-    // donate.classList.add('text-gray-600')
-
-
-
-// document.getElementById("main-section").classList.add('hidden')
-// document.getElementById('historyBtn').classList.remove('hidden')
-
-
-
+document.getElementById('main-section').classList.add('hidden')
+document.getElementById('history-section').classList.remove('hidden')
 
 })
-
-    
-
-
-
-
-
-
-
-
-
-
 // 2 button alter 
 
   donate.addEventListener('click', function () {
@@ -136,13 +95,12 @@ history.addEventListener('click', function() {
 
     history.classList.remove("btn", "btn-normal")
 
-    document.getElementById('main-section').classList.add('hidden')
-    document.getElementById("historyBtn").classList.remove('hidden')
+   
   })
 
 
   document.getElementById('blogBtn').addEventListener('click', function () {
-    window.location.href = '/home.html'
+    window.location.href = './home.html'
     
   })
 
