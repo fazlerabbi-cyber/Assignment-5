@@ -4,16 +4,22 @@ function getInputValueById(id) {
 
 
 
-const donateBtn = document.getElementById('donateBtn')
+
+
+const donateBtn = document.getElementById('donateBtn1')
 donateBtn.addEventListener('click', function () {
    
-    const inputOne = getInputValueById('input')
+    
+   
+    const inputOne = getInputValueById('inputOne')
     
     document.getElementById('addMoney').innerText = inputOne
 
     const navMoney = parseFloat(document.getElementById('navMoney').innerText)
 
     const result = navMoney - inputOne
+ 
+    
     document.getElementById('navMoney').innerText = result
 
 
@@ -39,7 +45,7 @@ donateBtn2.addEventListener('click', function() {
     const result = navMoney - inputTwo
     document.getElementById('navMoney').innerText = result
 
-    if(inputTwo <= 0 || isNaN(inputOne)) {
+    if(inputTwo <= 0 || isNaN(inputTwo)) {
         alert('Valid Donate Amount')
     }
     
@@ -58,7 +64,7 @@ donateBtn3.addEventListener('click', function() {
     document.getElementById('navMoney').innerText = result
 
 
-    if(inputThree <= 0 || isNaN(inputOne)) {
+    if(inputThree <= 0 || isNaN(inputThree)) {
         alert('Valid Donate Amount')
     }
     
@@ -72,26 +78,57 @@ const history = document.getElementById('historyBtn')
 const  donate = document.getElementById('donateBtn')
 
 history.addEventListener('click', function() {
-    history.classList.add("btn", "btn-primary")  
-    donate.classList.remove("btn", "btn-normal")
-
-    document.getElementById('main-section').classList.add('hidden')
+ history.classList.add("btn", "btn-primary")
 
 
-    document.getElementById('historyBtn').classList.remove('hidden')
 
-})
+
+
+
+
+ history.classList.remove("text-gray-600")  
+ donate.classList.remove("btn", "btn-normal")
 
 
 // donate 
 
-donate.addEventListener('click', function () {
-    history.classList.add("btn", "btn-normal")
 
-    donate.classList.remove("btn", "btn-primary")
+    donate.classList.add('text-gray-600')
+
+
+
+document.getElementById("main-section").classList.add('hidden')
+document.getElementById('historyBtn').classList.remove('hidden')
+
+
+
+
+})
+
+    
+
+
+
+
+
+
+
+
+
+
+// 2 button alter 
+
+  donate.addEventListener('click', function () {
+    donate.classList.add("btn", "btn-primary")
+
+    history.classList.remove("btn", "btn-normal")
 
     document.getElementById('main-section').classList.remove('hidden')
+    document.getElementById("historyBtn").classList.remove('hidden')
+  })
 
 
-    document.getElementById('historyBtn').classList.add('hidden')
-})
+  document.getElementById('blogBtn').addEventListener('click', function () {
+    window.location.href = '/home.html'
+    
+  })
