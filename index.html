@@ -8,151 +8,177 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
 </head>
 
 <body>
-<!-- nav section str     -->
+    <!-- nav section str     -->
     <div class="navbar bg-base-100 p-6 shadow-lg   sticky top-0 z-50">
-        
+
 
         <div class="navbar-start ">
-         
-                    <button id="blogBtn" class="btn btn-primary ">Blog</button>
-                
+
+            <button id="blogBtn" class="btn btn-primary ">Blog</button>
+
         </div>
 
 
 
-        <div class="navbar-center gap-3">
-          <img src="assest/logo.png" alt="">
-            <h3 class="font-bold">Donate Bangladesh</h3></a>
+        <div class="navbar-center  hidden lg:block ">
+            <div class="flex items-center gap-3">
+                <img src="assest/logo.png" alt="">
+                <h3 class="font-bold">Donate Bangladesh</h3></a>
+
+            </div>
         </div>
 
 
 
         <div class="navbar-end">
-        
-          <div class="flex gap-1 items-center p-2 w-3/12 bg-slate-200 ">
-            <img src="assest/coin.png" alt="">
-            <span id="navMoney">5000 </span>BDT
-        </div>
+
+            <div class="flex gap-1 items-center p-2  bg-slate-200 ">
+                <img src="assest/coin.png" alt="">
+                <span id="navMoney">5000 </span>BDT
+            </div>
         </div>
 
-      </div>
+    </div>
     <!-- nav section end     -->
 
     <main id="main-section">
 
-       <!--2 button start -->
-       <div class="flex justify-center py-4 gap-4 my-4 sticky top-20 z-50">
-        <button id="donateBtn" class="btn btn-primary ">Donation</button>
-        <button id="historyBtn" class="btn btn-normal">History</button>
-       </div>
-       <!--2 button end -->
-
-
-
-
-<div id="div-container">
-    
-    <div class="hero bg-base-200   ">
-        <div class="hero-content flex flex-col-reverse lg:flex-row-reverse ">
-
-            <div>
-                <div class="flex  gap-1 items-center p-2 w-2/12 bg-slate-200 ">
-                    <img src="assest/coin.png" alt="">
-                    <span id="addMoney"> 0 </span>BDT
-                </div>
-                <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
-                <p class="py-6">
-                    This is a paragraph that is floating around an image. The image is floated to the left, 
-        so the text wraps around it. Floated elements allow you to position content inside a container 
-        in more flexible ways, but be careful to clear floats when you're done, or your layout might break
-                </p>
-                <input id="inputOne" class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount"> <br> <br>
-                <button id="donateBtn1" class="btn btn-primary w-full">Donate Now</button>
-            </div>
-            <div>
-                <img src="assest/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
-            </div>
-
+        <!--2 button start -->
+        <div class="flex justify-center py-4 gap-4 my-4 sticky top-20 z-50">
+            <button id="donateBtn" class="btn btn-primary ">Donation</button>
+            <button id="historyBtn" class="btn btn-normal">History</button>
         </div>
-    </div>
+        <!--2 button end -->
 
-    <!-- 2  -->
-    <div class="hero bg-base-200  ">
-        <div class="hero-content flex flex-col-reverse lg:flex-row-reverse ">
 
-            <div>
-                <div class="flex gap-1 items-center p-2 w-2/12 bg-slate-200 ">
-                    <img src="assest/coin.png" alt="">
-                    <span id="addMoney2"> 0 </span>BDT
+
+
+        <div id="div-container">
+
+            <div class="hero bg-base-200   ">
+                <div class="hero-content flex flex-col-reverse lg:flex-row-reverse ">
+
+                    <div>
+                        <div class="flex  gap-1 items-center p-2 w-2/12 bg-slate-200 ">
+                            <img src="assest/coin.png" alt="">
+                            <span id="addMoney"> 0 </span>BDT
+                        </div>
+                        <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                        <p class="py-6">
+                            The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation
+                    will help provide essential supplies and to those affected by this disaster. Every contribution, big
+                    or small, makes difference. Please join us in supporting the relief efforts and making a positive
+                    impact on the lives of those in need.
+                        </p>
+                        <input id="inputOne" class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount">
+                        <br> <br>
+                        <button id="donateBtn1"  onclick="" class="btn btn-primary w-full">Donate Now</button>
+                    </div>
+                    <div>
+                        <img src="assest/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
+                    </div>
+
                 </div>
-                <h1 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
-                <p class="py-6">
-                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                    quasi. In deleniti eaque aut repudiandae et a id nisi.
-                </p>
-                <input id="input2" class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount"> <br> <br>
-                <button id="donateBtn2" class="btn btn-primary w-full">Donate Now</button>
-            </div>
-            <div>
-                <img src="assest/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
             </div>
 
-        </div>
-    </div>
+            <!-- 2  -->
+            <div class="hero bg-base-200  ">
+                <div class="hero-content flex flex-col-reverse lg:flex-row-reverse ">
 
-    <!-- 3 -->
-    <div class="hero bg-base-200 ">
-        <div class="hero-content  flex flex-col-reverse lg:flex-row-reverse  ">
+                    <div>
+                        <div class="flex gap-1 items-center p-2 w-2/12 bg-slate-200 ">
+                            <img src="assest/coin.png" alt="">
+                            <span id="addMoney2"> 0 </span>BDT
+                        </div>
+                        <h1 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                        <p class="py-6">
+                            The recent floods in Feni have devastated local communities, leading to severe disruption and loss.
+                            Your generous donation will help provide immediate aid, including food, clean water, and medical
+                            supplies, to those affected by this calamity. Together, we can offer crucial support and help
+                            rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real
+                            difference. Please consider donating today to assist those in urgent need.
+                        </p>
+                        <input id="input2" class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount">
+                        <br> <br>
+                        <button id="donateBtn2"  onclick="" class="btn btn-primary w-full">Donate Now</button>
+                    </div>
+                    <div>
+                        <img src="assest/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
+                    </div>
 
-            <div>
-                <div class="flex gap-1 items-center p-2 w-2/12 bg-slate-200 ">
-                    <img src="assest/coin.png" alt="">
-                    <span id="addMoney3"> 0 </span>BDT
                 </div>
-                <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
-                <p class="py-6">
-                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                    quasi. In deleniti eaque aut repudiandae et a id nisi.
-                </p>
-                <input id="input3" class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount"> <br> <br>
-                <button id="donateBtn3" class="btn btn-primary w-full">Donate Now</button>
-            </div>
-            <div>
-                <img src="assest/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
             </div>
 
+            <!-- 3 -->
+            <div class="hero bg-base-200 ">
+                <div class="hero-content  flex flex-col-reverse lg:flex-row-reverse  ">
+
+                    <div>
+                        <div class="flex gap-1 items-center p-2 w-2/12 bg-slate-200 ">
+                            <img src="assest/coin.png" alt="">
+                            <span id="addMoney3"> 0 </span>BDT
+                        </div>
+                        <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
+                        <p class="py-6">
+                            The recent Quota movement has resulted in numerous injuries and significant hardship for many
+                            individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary
+                            supplies to those affected. By contributing, you help ensure that injured individuals receive the
+                            care and support they need during this challenging time. Every donation plays a vital role in
+                            alleviating their suffering and aiding in their recovery. Please consider making a donation to
+                            support these brave individuals in their time of need.1
+                        </p>
+                        <input id="input3" class="w-full h-10 p-3" type="number" placeholder="Write Donation Amount">
+                        <br> <br>
+                        <button id="donateBtn3"  onclick="" class="btn btn-primary w-full">Donate Now</button>
+                    </div>
+                    <div>
+                        <img src="assest/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-        
+
 
     </main>
 
     <!-- history  -->
 
     <div id="history-section" class="text-center p-4 hidden">
-       
-       <div class="border border-spacing-5">
-        <p> <span id="donateOne"></span> TK Donated for flood at Noakhali, Bangladesh</p>
-        
-       </div>
 
-       <div class="border border-spacing-5">
-        <p> <span id="donateTwo"></span> TK Donated for flood at Feni, Bangladesh</p>
-        
-       </div>
+        <div class="border border-spacing-5">
+            <p> <span id="donateOne"></span> TK Donated for flood at Noakhali, Bangladesh</p>
+        </div>
 
-       <div class="border border-spacing-5">
-        <p> <span id="donateThree"></span> TK Donated for flood at Quota, Bangladesh</p>
-       
-       </div>
+        <div class="border border-spacing-5">
+            <p> <span id="donateTwo"></span> TK Donated for flood at Feni, Bangladesh</p>
+        </div>
 
+        <div class="border border-spacing-5">
+        </div>
     </div>
+
+    <!-- modal  -->
+
+    
+    <dialog id="my_modal_2" class="modal text-center">
+        <div class="modal-box">
+            <h3 class="text-lg font-bold">Congrastes!</h3>
+            <div class="flex justify-center">
+                <img src="./assest/coin.png" alt="">
+            </div>
+            <p class="py-4">You have Donate Successfully</p>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+        
+    </dialog>
 
     <script src="./js/script.js"></script>
 </body>

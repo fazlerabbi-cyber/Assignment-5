@@ -26,6 +26,7 @@ donateBtn.addEventListener('click', function () {
     const result = navMoney - inputOne
     document.getElementById('navMoney').innerText = result
 
+    my_modal_2.showModal()
 
 
    
@@ -52,14 +53,9 @@ donateBtn2.addEventListener('click', function() {
  
 
     const result = navMoney - input2
-    document.getElementById('navMoney').innerText = result
+    document.getElementById('navMoney').innerText = result  
 
-
-
-    
-
- 
-    
+    my_modal_2.showModal()
 })
 
 // 3rd 
@@ -85,7 +81,7 @@ donateBtn3.addEventListener('click', function() {
     document.getElementById('navMoney').innerText = result
 
 
-
+    my_modal_2.showModal()
     
     
 })
@@ -126,3 +122,5 @@ document.getElementById('history-section').classList.add('hidden')
     
   })
 
+
+  
