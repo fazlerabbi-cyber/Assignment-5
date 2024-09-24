@@ -13,6 +13,7 @@ donateBtn.addEventListener('click', function () {
         alert('Valid Donate Amount')
         return
     }
+    
     const inputFastValue = document.getElementById('addMoney').innerText
     const addMoney = parseFloat(inputFastValue)
      const noakhaliMoney = inputOne + addMoney;
@@ -22,16 +23,15 @@ donateBtn.addEventListener('click', function () {
     document.getElementById('donateOne').innerText = inputOne
     const navMoney = parseFloat(document.getElementById('navMoney').innerText)
  
+    if(inputOne > navMoney) {
+        alert('Insufficient balance')
+        return
+    }
 
     const result = navMoney - inputOne
     document.getElementById('navMoney').innerText = result
 
-    my_modal_2.showModal()
-
-
-   
-    
-    
+    my_modal_2.showModal()  
 })
 
 // 2nd card 
@@ -48,9 +48,12 @@ donateBtn2.addEventListener('click', function() {
      const noakhaliMoney = input2 + addMoney2;
     document.getElementById('addMoney2').innerText= noakhaliMoney
 
-    document.getElementById('donateTwo').innerText = inputOne
+    document.getElementById('donateTwo').innerText = input2
     const navMoney = parseFloat(document.getElementById('navMoney').innerText)
- 
+    if(input2 > navMoney) {
+        alert('Insufficient balance')
+        return
+    }
 
     const result = navMoney - input2
     document.getElementById('navMoney').innerText = result  
@@ -75,15 +78,15 @@ donateBtn3.addEventListener('click', function() {
 
     document.getElementById('donateThree').innerText = input3
     const navMoney = parseFloat(document.getElementById('navMoney').innerText)
- 
+    if(input3 > navMoney) {
+        alert('Insufficient balance')
+        return
+    }
 
     const result = navMoney - input3
     document.getElementById('navMoney').innerText = result
-
-
     my_modal_2.showModal()
-    
-    
+  
 })
 
 
