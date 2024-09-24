@@ -9,6 +9,10 @@ donateBtn.addEventListener('click', function () {
     
    
     const inputOne = getInputValueById('inputOne')
+    if(inputOne <= 0 || isNaN(inputOne)) {
+        alert('Valid Donate Amount')
+        return
+    }
     const inputFastValue = document.getElementById('addMoney').innerText
     const addMoney = parseFloat(inputFastValue)
      const noakhaliMoney = inputOne + addMoney;
@@ -24,9 +28,7 @@ donateBtn.addEventListener('click', function () {
 
 
 
-    if(inputOne <= 0 || isNaN(inputOne)) {
-        alert('Valid Donate Amount')
-    }
+   
     
     
 })
@@ -36,6 +38,10 @@ const donateBtn2 = document.getElementById('donateBtn2')
 donateBtn2.addEventListener('click', function() {
 
     const input2 = getInputValueById('input2')
+    if(input2 <= 0 || isNaN(input2)) {
+        alert('Valid Donate Amount')
+        return
+    }
     const inputFastValue = document.getElementById('addMoney2').innerText
     const addMoney2 = parseFloat(inputFastValue)
      const noakhaliMoney = input2 + addMoney2;
@@ -50,9 +56,7 @@ donateBtn2.addEventListener('click', function() {
 
 
 
-    if(inputTwo <= 0 || isNaN(input2)) {
-        alert('Valid Donate Amount')
-    }
+    
 
  
     
@@ -63,6 +67,11 @@ const donateBtn3 = document.getElementById('donateBtn3')
 donateBtn3.addEventListener('click', function() {
 
     const input3 = getInputValueById('input3')
+    if(input3 <= 0 || isNaN(input3)) {
+        alert('Valid Donate Amount')
+        return
+    }
+
     const inputFastValue = document.getElementById('addMoney3').innerText
     const addMoney3 = parseFloat(inputFastValue)
      const noakhaliMoney = input3 + addMoney3;
@@ -77,10 +86,7 @@ donateBtn3.addEventListener('click', function() {
 
 
 
-    if(inputThree <= 0 || isNaN(input3)) {
-        alert('Valid Donate Amount')
-    }
-
+    
     
 })
 
